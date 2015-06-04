@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de lienzo</title>
+    <script type="text/javascript">
+        function cargador()
+        {
+            var lienzo = document.getElementById('lienzo');
+            var lienzo1 = lienzo.getContext('2d');
+            lienzo1.fillStyle = "rgba(0,0,200,1)";
+            lienzo1.fillRect(20,20,200,100);
+            lienzo1.fillStyle = "rgba(0,120,120,1)";
+            lienzo1.fillRect(40,50,20,10);
+        }
+    </script>
+</head>
+<body onload="cargador()">
+    <h1>Ejemplo de lienzo</h1>
+    <canvas id="lienzo" width="600" height="500"></canvas>
+</body>
+</html>
